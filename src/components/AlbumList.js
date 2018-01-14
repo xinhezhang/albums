@@ -19,12 +19,16 @@ class AlbumList extends Component {
     axios.get(API_KEY).then(response => this.setState({ albums: response.data }));
   }
 
+  renderAlbums() {
+    return this.state.albums.map(album => <Text key={album.title}>{album.title}</Text>);
+  }
+
   render() {
     console.log(this.state);
     
     return (
       <View>
-        <Text>Album List</Text>
+        {this.renderAlbums()}
       </View>
     );
   }
