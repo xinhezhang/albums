@@ -7,8 +7,9 @@ import AlbumList from './src/components/AlbumList';
 
 // create a component
 const App = () => {
+  // fix problem of last image display: "{ flex: 1 }", "{ paddingBottom: 64 }"
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Header headerText={'Albums'} />
       <AlbumList />
     </View>
