@@ -9,7 +9,10 @@ const AlbumDetail = (props) => {
     <Card>
       <CardSection>
         <View>
-          <Image source={{ uri: props.album.thumbnail_image }} />
+          <Image
+            style={styles.thumbnailStyle}
+            source={{ uri: props.album.thumbnail_image }}
+          />
         </View>
         <View style={styles.headerContentStyle}>
           <Text>Title: {props.album.title}</Text>
@@ -24,6 +27,10 @@ const styles = {
   headerContentStyle: {
     flexDirection: 'column',
     justifyContent: 'space-around',
+  },
+  thumbnailStyle: {     // apply for image (must have)
+    height: 50,
+    width: 50,
   },
 };
 
