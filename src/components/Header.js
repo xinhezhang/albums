@@ -11,6 +11,18 @@ const Header = (props) => {
   );
 };
 
+// export default class Header extends React.Component {
+//   render() {
+//     const { textStyle, viewStyle } = styles;
+//
+//     return (
+//       <View style={viewStyle}>
+//         <Text style={textStyle}>{this.props.headerText}</Text>
+//       </View>
+//     );
+//   }
+// }
+
 const styles = {
   viewStyle: {
     backgroundColor: '#F8F8F8',
