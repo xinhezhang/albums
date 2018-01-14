@@ -1,11 +1,12 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = () => {
+const Button = ({ onPress }) => {
   const { buttonStyle, textStyle } = styles;
 
+  // using "props.onPress" (callback) on the Button, make component more general
   return (
-    <TouchableOpacity style={buttonStyle} onPress={() => console.log('Click')}>
+    <TouchableOpacity style={buttonStyle} onPress={onPress}>
       <Text style={textStyle}>
         Click
       </Text>
