@@ -18,11 +18,11 @@ const styles = {
     alignItems: 'center',       // row direction
     height: 60,
     padding: 15,
-    shadowColor: '#000',
+    shadowColor: '#000',        // 'shadow' is ios specific
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
-    elevation: 2,
-    position: 'relative',
+    elevation: 2,               // needed for android
+    position: 'relative',       // needed for android
   },
   textStyle: {
     fontSize: 20,
