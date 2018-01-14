@@ -20,6 +20,7 @@ const AlbumDetail = ({ album }) => {
     thumbnailContainerStyle,
     headerTextStyle,
     imageStyle,
+    textStyle,
   } = styles;
 
   return (
@@ -33,7 +34,7 @@ const AlbumDetail = ({ album }) => {
         </View>
         <View style={headerContentStyle}>
           <Text style={headerTextStyle}>{title}</Text>
-          <Text>{artist}</Text>
+          <Text style={textStyle}>{artist}</Text>
         </View>
       </CardSection>
 
@@ -60,6 +61,11 @@ const styles = {
   },
   headerTextStyle: {
     fontSize: 20,
+    fontWeight: 'bold',
+  },
+  textStyle: {
+    fontSize: 14,
+    fontStyle: 'italic',
   },
   thumbnailStyle: {     // apply for image (must have)
     height: 50,

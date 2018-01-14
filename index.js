@@ -21,3 +21,12 @@ console.ignoredYellowBox = ['Remote debugger'];
 
 // render to the device
 AppRegistry.registerComponent('albums', () => App);
+
+
+// How to add app icon?
+//
+// https://blog.bam.tech/developper-news/change-your-react-native-app-icons-in-a-single-command-line
+//
+// npm install -g yo generator-rn-toolbox
+// brew install imagemagick
+// yo rn-toolbox:assets --icon <path to your icon>

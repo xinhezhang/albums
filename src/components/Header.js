@@ -1,27 +1,17 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const Header = (props) => {
+const Header = ({ headerText }) => {
   const { textStyle, viewStyle } = styles;
 
   return (
     <View style={viewStyle}>
-      <Text style={textStyle}>{props.headerText}</Text>
+      <Text style={textStyle}>
+        {headerText}
+      </Text>
     </View>
   );
 };
-
-// export default class Header extends React.Component {
-//   render() {
-//     const { textStyle, viewStyle } = styles;
-//
-//     return (
-//       <View style={viewStyle}>
-//         <Text style={textStyle}>{this.props.headerText}</Text>
-//       </View>
-//     );
-//   }
-// }
 
 const styles = {
   viewStyle: {
@@ -29,7 +19,7 @@ const styles = {
     justifyContent: 'center',   // column direction
     alignItems: 'center',       // row direction
     height: 60,
-    padding: 15,
+    paddingTop: 15,
     shadowColor: '#000',        // 'shadow' is ios specific
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
@@ -38,6 +28,7 @@ const styles = {
   },
   textStyle: {
     fontSize: 20,
+    fontWeight: '600',
   },
 };
 
