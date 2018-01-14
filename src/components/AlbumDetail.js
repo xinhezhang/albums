@@ -69,7 +69,7 @@ const styles = {
     marginRight: 10,
   },
   imageStyle: {
-    height: 300,  // fixed height
+    height: 350,  // fixed height
     flex: 1,
     width: null,  // must set to 'null' in order to fill the whole width
   },
