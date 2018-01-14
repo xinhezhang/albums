@@ -16,5 +16,8 @@ const App = () => {
   );
 };
 
+// get rid of “Remote debugger is in a background tab” warning
+console.ignoredYellowBox = ['Remote debugger'];
+
 // render to the device
 AppRegistry.registerComponent('albums', () => App);
